@@ -1851,6 +1851,10 @@ p.item-index {
     padding: 0;
 }
 
+.wpcf7-form-control-wrap {
+    margin-top: 2em;
+}
+
 .wpcf7-form p span textarea {
     width: 100%;
     background: transparent;
@@ -2837,6 +2841,7 @@ footer.footer * .menu {
 
     .wpcf7-acceptance .wpcf7-list-item label span {
         text-align: left;
+        font-size: 14px;
     }
 
     .form-submit p span {

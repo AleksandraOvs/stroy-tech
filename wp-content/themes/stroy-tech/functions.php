@@ -39,6 +39,7 @@ function stroy_tech_enqueue_styles()
     wp_enqueue_script('main-scripts', get_stylesheet_directory_uri() . '/js/scripts.js', array(), _S_VERSION, true);
     wp_enqueue_script('faq-scripts', get_stylesheet_directory_uri() . '/js/faq.js', array(), _S_VERSION, true);
     wp_enqueue_script('sliders-script', get_stylesheet_directory_uri() . '/js/sliders.js', array(), _S_VERSION, true);
+    wp_enqueue_script('popups-script', get_stylesheet_directory_uri() . '/js/popups.js', array(), _S_VERSION, true);
 }
 
 function theme_enqueue_nice_select()

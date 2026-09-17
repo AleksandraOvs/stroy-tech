@@ -70,6 +70,11 @@ $site_description = get_bloginfo('description');
     </div>
 </footer>
 
+<div id="hero-popup" class="popup" style="display:none;">
+    <?php echo do_shortcode('[contact-form-7 id="e491c26" title="Предварительный расчет"]');
+    ?>
+</div>
+
 <!-- SCROLL TOP -->
 <button class="scroll-top" type="button" aria-label="Наверх">
     <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -94,7 +99,7 @@ $site_description = get_bloginfo('description');
     </div>
 <?php endif; ?>
 
-<?php //get_template_part('template-parts/popups') 
+<?php get_template_part('template-parts/popups')
 ?>
 
 <?php wp_footer(); ?>
