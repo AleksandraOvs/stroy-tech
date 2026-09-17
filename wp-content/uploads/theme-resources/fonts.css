@@ -1,0 +1,21 @@
+@font-face{
+                font-family:'PTSansNarrow';
+                src:url('/wp-content/plugins/theme-resources/assets/fonts/PTSansNarrow-Regular.woff') format('woff');
+                font-weight:400;
+                font-style:normal;
+                font-display:swap;
+            }@font-face{
+                font-family:'montserrat';
+                src:url('/wp-content/plugins/theme-resources/assets/fonts/montserrat-regular.woff2') format('woff2');
+                font-weight:400;
+                font-style:normal;
+                font-display:swap;
+            }:root{--font-heading:'PTSansNarrow',sans-serif;--font-body:'montserrat',sans-serif;}
+        h1,h2,h3 {
+            font-family:var(--font-heading);
+        }
+    
+        body {
+            font-family:var(--font-body);
+        }
+    
