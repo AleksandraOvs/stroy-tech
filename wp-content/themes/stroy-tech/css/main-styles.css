@@ -2117,6 +2117,14 @@ footer.footer * .menu li a {
     color: var(--white);
 }
 
+.footer-inner__col .widget .wp-block-columns a {
+    text-decoration: underline;
+}
+
+.footer-inner__col .widget .wp-block-columns .wp-block-column .wp-block-paragraph a {
+    text-decoration: none;
+}
+
 footer.footer * .menu {
     list-style: none;
 }
