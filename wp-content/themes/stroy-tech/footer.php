@@ -11,49 +11,52 @@ $site_description = get_bloginfo('description');
         <div class="footer-inner">
             <div class="footer-inner__col">
                 <div class="footer-inner__col__logo">
-                    <?php if ($footer_logo_url): ?>
+                    <?php if ($footer_logo_url) { ?>
                         <img
                             src="<?= esc_url($footer_logo_url); ?>"
                             alt="<?= esc_attr($site_name); ?>">
-                    <?php endif; ?>
+                    <?php } else {
+                    ?>
+                        <div class="_footer-site-info__logo__company">
 
-                    <div class="_footer-site-info__logo__company">
+                            <?php if ($site_name): ?>
+                                <p class="site-name">
+                                    <?= esc_html($site_name); ?>
+                                </p>
+                            <?php endif; ?>
 
-                        <?php if ($site_name): ?>
-                            <p class="site-name">
-                                <?= esc_html($site_name); ?>
-                            </p>
-                        <?php endif; ?>
+                            <?php if ($site_description): ?>
+                                <p class="site-description">
+                                    <?= esc_html($site_description); ?>
+                                </p>
+                            <?php endif; ?>
 
-                        <?php if ($site_description): ?>
-                            <p class="site-description">
-                                <?= esc_html($site_description); ?>
-                            </p>
-                        <?php endif; ?>
+                        </div>
 
-                    </div>
+                    <?php
+
+                    } ?>
+
+
 
                 </div>
-
+                <?php if (is_active_sidebar('footer-sidebar-1')) : ?>
+                    <div class="footer-inner__col">
+                        <?php dynamic_sidebar('footer-sidebar-1'); ?>
+                    </div>
+                <?php endif; ?>
                 <?php
-                wp_nav_menu([
-                    'theme_location' => 'docs_menu',
-                    'container'      => false,
-                    'menu_class'     => 'docs-menu',
-                    'menu_id'        => '',
-                    'fallback_cb'    => false,
-                    'link_before'    => '',
-                    'link_after'     => '',
-                ]);
+                // wp_nav_menu([
+                //     'theme_location' => 'docs_menu',
+                //     'container'      => false,
+                //     'menu_class'     => 'docs-menu',
+                //     'menu_id'        => '',
+                //     'fallback_cb'    => false,
+                //     'link_before'    => '',
+                //     'link_after'     => '',
+                // ]);
                 ?>
             </div>
-
-            <?php if (is_active_sidebar('footer-sidebar-1')) : ?>
-                <div class="footer-inner__col">
-                    <?php dynamic_sidebar('footer-sidebar-1'); ?>
-                </div>
-            <?php endif; ?>
-
             <?php if (is_active_sidebar('footer-sidebar-2')) : ?>
                 <div class="footer-inner__col">
                     <?php dynamic_sidebar('footer-sidebar-2'); ?>

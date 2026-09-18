@@ -1231,6 +1231,10 @@ section.projects {
     width: 100%;
 }
 
+.form-section__title h2 {
+    max-width: 420px;
+}
+
 .form-section__title {
     position: relative;
     padding: 4em 4em 4em var(--container-padding);
@@ -2084,6 +2088,13 @@ footer .widget p {
     margin-bottom: 1.5em;
 }
 
+.footer-inner__col__logo img {
+    width: 150px;
+    height: 40px;
+    object-fit: contain;
+    object-position: center;
+}
+
 .contacts-bar {
     display: none;
 }
@@ -2759,6 +2770,10 @@ footer.footer * .menu {
         width: 100%;
         justify-content: space-between;
         display: flex;
+    }
+
+    .form-section__title h2 {
+        max-width: unset;
     }
 
 
