@@ -103,8 +103,14 @@ ul.list-style-markers {
     list-style: none;
 }
 
-ul.list-style-markers.dark-markers li {
+ul.list-style-markers.dark-markers li:before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
     background: var(--theme-color-primary);
+    display: inline-block;
+    margin-right: .5em;
 }
 
 ul.list-style-markers li:before {
