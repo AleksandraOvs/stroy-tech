@@ -204,6 +204,8 @@ button {
     z-index: 2;
     font-weight: 600;
     font-family: var(--font-body);
+    line-height: 100%;
+    transform: translatey(1.5px);
 }
 
 .button:after {
