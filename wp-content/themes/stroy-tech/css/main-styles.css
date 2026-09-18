@@ -231,7 +231,7 @@ button {
     border-radius: 30px;
     border: 1px solid transparent;
     color: var(--theme-color-primary);
-    background: transparent;
+    background: var(--theme-color-accent);
     display: flex;
     align-items: center;
     justify-content: center;
