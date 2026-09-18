@@ -472,9 +472,6 @@ header.scroll {
     width: 150px;
     height: 40px;
     display: block;
-    background: var(--white);
-    padding: 3px;
-    border-radius: 20px;
 }
 
 .header-logo__image img {
