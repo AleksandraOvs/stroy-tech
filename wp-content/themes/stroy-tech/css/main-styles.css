@@ -1292,6 +1292,14 @@ section.projects {
     border-color: var(--theme-color-black);
 }
 
+.form-section__form.--second-var form input.button-light {
+    color: #fff;
+    border-color: transparent;
+    background: var(--dark-gradient);
+    background: linear-gradient(146deg, rgba(30, 0, 69, 1) 0%, rgba(16, 0, 30, .2) 100%);
+}
+
+
 .form-section__form.--second-var * {
     color: var(--theme-color-black);
 }
