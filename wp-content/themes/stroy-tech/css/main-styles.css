@@ -2098,6 +2098,17 @@ footer .widget p {
     object-position: center;
 }
 
+.footer-inner>div {
+    flex: 1;
+}
+
+.footer-inner>div:first-child,
+.footer-inner>div:nth-child(3) {
+    width: 30%;
+    flex: unset;
+    max-width: 280px;
+}
+
 .contacts-bar {
     display: none;
 }
@@ -2113,6 +2124,25 @@ footer.footer * .menu {
 .footer-inner {
     display: flex;
     justify-content: space-between;
+    gap: 4em;
+}
+
+.footer-inner>div:nth-child(2) {
+    max-width: 385px;
+}
+
+.footer-inner__col div p {
+    margin-bottom: 2em;
+}
+
+.widget .footer-company-name {
+    font-family: var(--font-heading);
+    font-size: 23px;
+    margin-bottom: .2em;
+}
+
+.footer-inner>div:last-child {
+    text-align: right;
 }
 
 .footer__info {
