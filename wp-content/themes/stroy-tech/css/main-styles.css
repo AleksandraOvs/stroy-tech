@@ -2009,6 +2009,10 @@ input.wpcf7-form-control {
     width: max-content;
 }
 
+.f-html {
+    background: var(--light-gradient);
+}
+
 /* =========================================
   Footer
 ========================================= */
