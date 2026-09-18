@@ -1347,7 +1347,7 @@ section.projects {
 
 .infoBlock-section__title {
     padding-left: var(--container-padding);
-    padding-right: 35%;
+    max-width: 422px;
     line-height: 1.4;
 }
 
@@ -2779,6 +2779,10 @@ footer.footer * .menu {
     }
 
     .partners-section__title {
+        max-width: unset;
+    }
+
+    .infoBlock-section__title {
         max-width: unset;
     }
 
