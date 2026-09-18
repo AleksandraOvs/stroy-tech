@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
     });
 
-       const reviewsSlider = document.querySelector('.reviews-slider');
+    const reviewsSlider = document.querySelector('.reviews-slider');
 
     if (reviewsSlider) {
         new Swiper(reviewsSlider, {
@@ -121,15 +121,15 @@ document.addEventListener('DOMContentLoaded', () => {
             },
 
             breakpoints: {
-    
-                480:{
+
+                480: {
                     slidesPerView: 2.5,
                 },
                 768: {
                     slidesPerView: 2.5,
                 },
 
-                1200:{
+                1200: {
                     slidesPerView: 3.2,
                 }
             },
@@ -394,6 +394,10 @@ document.addEventListener('DOMContentLoaded', function () {
                         slidesPerView: 3.2,
                     },
 
+                    1200: {
+                        slidesPerView: 4.2,
+                    },
+
                 },
 
             });
@@ -430,21 +434,21 @@ document.addEventListener('DOMContentLoaded', function () {
      * ==========================================================
      */
 
-   document.addEventListener('click', function (event) {
+    document.addEventListener('click', function (event) {
 
-    if (!activeModal) {
-        return;
-    }
+        if (!activeModal) {
+            return;
+        }
 
-    if (
-        event.target.classList.contains(
-            'gallery-modal__overlay'
-        )
-    ) {
-        closeModal();
-    }
+        if (
+            event.target.classList.contains(
+                'gallery-modal__overlay'
+            )
+        ) {
+            closeModal();
+        }
 
-});
+    });
 
 
     /*
