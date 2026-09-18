@@ -18,7 +18,7 @@ $project_slides = array_reverse($project_slides);
 
 ?>
 
-<section class="projects">
+<section class="projects" id="projects">
 
     <div class="projects-image">
         <img

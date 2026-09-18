@@ -5,7 +5,7 @@ $info_block_list        = carbon_get_the_post_meta('info_block_list');
 $infoBlock_image    = carbon_get_the_post_meta('crb_info_block_image');
 ?>
 
-<section class="infoBlock-section pt-10">
+<section class="infoBlock-section pt-10" id="info-block">
     <div class="infoBlock-section__inner">
 
         <div class="infoBlock-section__content">

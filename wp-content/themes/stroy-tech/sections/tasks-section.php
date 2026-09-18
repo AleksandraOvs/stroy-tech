@@ -3,7 +3,7 @@ $tasks_title = carbon_get_the_post_meta('tasks_title');
 $tasks_list  = carbon_get_the_post_meta('crb_tasks_list');
 ?>
 
-<section class="tasks-section">
+<section class="tasks-section" id="tasks">
 
     <div class="fixed-container">
 
