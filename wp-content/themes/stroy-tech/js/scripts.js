@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
         return;
     }
 
-    // Открытие / закрытие каталога
+    // Открытие / закрытие
     toggleButton.addEventListener('click', function (event) {
 
         event.stopPropagation();
@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     });
 
+
     // Закрытие по крестику
     if (closeButton) {
         closeButton.addEventListener('click', function (event) {
@@ -27,9 +28,25 @@ document.addEventListener('DOMContentLoaded', function () {
             event.stopPropagation();
 
             menu.classList.remove('show');
+            toggleButton.classList.remove('active');
 
         });
     }
+
+
+    // Закрытие при клике на ссылку
+    const menuLinks = menu.querySelectorAll('a');
+
+    menuLinks.forEach(function (link) {
+
+        link.addEventListener('click', function () {
+
+            menu.classList.remove('show');
+            toggleButton.classList.remove('active');
+
+        });
+
+    });
 
 
     // Закрытие при клике вне меню
@@ -41,11 +58,9 @@ document.addEventListener('DOMContentLoaded', function () {
             !toggleButton.contains(event.target)
         ) {
             menu.classList.remove('show');
-            toggleButton.classList.toggle('active');
+            toggleButton.classList.remove('active');
         }
 
     });
 
 });
-
-
