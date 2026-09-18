@@ -711,8 +711,9 @@ ul.main-menu li a:hover::before {
     padding-bottom: 0;
     position: relative;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 10%;
 }
 
 .hero .fixed-container {
@@ -724,11 +725,12 @@ ul.main-menu li a:hover::before {
     display: block;
     width: 100%;
     height: 100%;
-
     z-index: 1;
     overflow: hidden;
     top: 0;
     left: 0;
+    object-fit: cover;
+    object-position: center;
 }
 
 .hero__image img {
@@ -751,7 +753,7 @@ ul.main-menu li a:hover::before {
 .hero__inner__content {
     display: flex;
     flex-direction: column;
-    gap: 4vh;
+    gap: 6vh;
 }
 
 
@@ -2859,6 +2861,10 @@ footer.footer * .menu {
 
     .header__bottom-logo {
         order: 4;
+    }
+
+    .hero__inner__content {
+        gap: 3vh;
     }
 
     .header__bottom__actions {

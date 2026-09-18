@@ -1,7 +1,7 @@
 .popup {
     max-width: 100%;
     width: 640px;
-    background: var(--theme-color-accent);
+    background: var(--white);
 }
 
 .popup h3 {
