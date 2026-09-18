@@ -1311,7 +1311,8 @@ section.projects {
     border-color: var(--theme-color-black);
 }
 
-.form-section__form.--second-var form input.button-light {
+.form-section__form.--second-var form input.button-light,
+.callback-form .form-submit input {
     color: #fff;
     border-color: transparent;
     background: var(--dark-gradient);
