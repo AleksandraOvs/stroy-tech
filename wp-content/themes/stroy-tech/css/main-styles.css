@@ -202,6 +202,8 @@ button {
 .button span {
     position: relative;
     z-index: 2;
+    font-weight: 600;
+    font-family: var(--font-body);
 }
 
 .button:after {
@@ -258,6 +260,7 @@ button {
     z-index: 1;
     transition: all .5s var(--transition);
     color: var(--theme-color-primary);
+    font-weight: 600;
 }
 
 .button-light.wpcf7-submit:hover {
