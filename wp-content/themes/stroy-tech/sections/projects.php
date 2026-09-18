@@ -38,7 +38,7 @@ $project_slides = array_reverse($project_slides);
             <?php endif; ?>
             <?php if ($about_projects) : ?>
 
-                <ul class="projects__about">
+                <ul class="projects__about list-style-markers dark-markers">
 
                     <?php foreach ($about_projects as $item) : ?>
 

@@ -103,6 +103,10 @@ ul.list-style-markers {
     list-style: none;
 }
 
+ul.list-style-markers.dark-markers li {
+    background: var(--theme-color-primary);
+}
+
 ul.list-style-markers li:before {
     content: '';
     width: 10px;
