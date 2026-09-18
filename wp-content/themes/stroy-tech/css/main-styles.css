@@ -1438,6 +1438,7 @@ section.projects {
     display: flex;
     gap: 1em;
     justify-content: space-between;
+    align-items: center;
 }
 
 .partners-section__subtitle {
