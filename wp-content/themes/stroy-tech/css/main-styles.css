@@ -1312,7 +1312,10 @@ section.projects {
 }
 
 .form-section__form.--second-var form input.button-light,
-.callback-form .form-submit input {
+.callback-form .form-submit input,
+.form-submit input,
+.form-submit p input,
+#hero-popup .wpcf7 form .form-submit p input {
     color: #fff;
     border-color: transparent;
     background: var(--dark-gradient);
