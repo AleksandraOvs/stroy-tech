@@ -1431,11 +1431,13 @@ section.projects {
     width: 50%;
     padding-left: var(--container-padding);
     margin: 0;
+    max-width: 460px;
 }
 
 .partners-section__inner__header {
     display: flex;
     gap: 1em;
+    justify-content: space-between;
 }
 
 .partners-section__subtitle {
@@ -2776,6 +2778,9 @@ footer.footer * .menu {
         max-width: unset;
     }
 
+    .partners-section__title {
+        max-width: unset;
+    }
 
 
 
