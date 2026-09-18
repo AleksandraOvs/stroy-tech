@@ -1393,6 +1393,13 @@ section.projects {
     gap: 2em;
 }
 
+.works-section__item-title {
+    font-size: 16px;
+    text-transform: none;
+    font-weight: 600;
+    margin: 0;
+}
+
 .infoBlock-section__image {
     width: calc(50% - 1em);
 }
