@@ -923,6 +923,10 @@ section.services {
     width: calc(60% - 2em);
 }
 
+.service-item__title {
+    font-size: 21px;
+}
+
 .service-item__image img {
     width: 100%;
     aspect-ratio: 16/9;
