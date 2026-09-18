@@ -263,6 +263,8 @@ button {
     transition: all .5s var(--transition);
     color: var(--theme-color-primary);
     font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
 }
 
 .button-light.wpcf7-submit:hover {
@@ -1297,6 +1299,8 @@ section.projects {
     border-color: transparent;
     background: var(--dark-gradient);
     background: linear-gradient(146deg, rgba(30, 0, 69, 1) 0%, rgba(16, 0, 30, .2) 100%);
+    font-style: normal;
+    text-transform: uppercase;
 }
 
 
