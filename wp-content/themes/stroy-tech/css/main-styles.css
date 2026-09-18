@@ -2141,6 +2141,10 @@ footer.footer * .menu {
     margin-bottom: .2em;
 }
 
+.wp-block-columns .wp-block-paragraph a {
+    text-decoration: none;
+}
+
 .footer-inner>div:last-child {
     text-align: right;
 }
