@@ -138,6 +138,7 @@ h2 {
     line-height: 1.2;
     margin-bottom: 5vh;
     text-transform: uppercase;
+    font-weight: 400;
 }
 
 h2.small-heading {
