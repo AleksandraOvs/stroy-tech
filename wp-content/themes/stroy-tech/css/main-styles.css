@@ -999,6 +999,7 @@ section.projects {
 
 .projects__title {
     color: var(--white);
+    max-width: 377px;
 }
 
 /*.projects__title__inner {
@@ -2568,6 +2569,10 @@ footer.footer * .menu {
 
     .projects__title__inner .fixed-container {
         grid-template-columns: 1fr;
+    }
+
+    .projects__title__inner h2 {
+        max-width: unset;
     }
 
     .projects__title__inner {
