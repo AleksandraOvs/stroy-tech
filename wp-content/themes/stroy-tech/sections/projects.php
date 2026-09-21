@@ -14,7 +14,7 @@ $project_slides = carbon_get_post_meta(
     'crb_projects_list'
 );
 
-$project_slides = array_reverse($project_slides);
+//$project_slides = array_reverse($project_slides);
 
 ?>
 
