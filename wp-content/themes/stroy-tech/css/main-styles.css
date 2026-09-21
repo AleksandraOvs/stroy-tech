@@ -2805,6 +2805,10 @@ footer.footer * .menu {
         margin: 0;
     }
 
+    .slider-navigation {
+        justify-content: space-between;
+    }
+
     .project-popup__content__inner__text {
         margin-top: 2em;
         width: 100%;
