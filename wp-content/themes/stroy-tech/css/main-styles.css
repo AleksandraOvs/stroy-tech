@@ -1378,6 +1378,7 @@ section.projects {
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 0;
+    text-transform: none;
     /* display: flex;
   gap: .3em;
   align-items: center; */
