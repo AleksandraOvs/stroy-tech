@@ -1406,6 +1406,16 @@ section.projects {
     margin: 0;
 }
 
+.works-section__item-title::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: var(--theme-color-primary);
+    display: inline-block;
+    margin-right: .5em;
+}
+
 .infoBlock-section__image {
     width: calc(50% - 1em);
 }
