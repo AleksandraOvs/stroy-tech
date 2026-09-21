@@ -694,20 +694,20 @@ ul.main-menu li a:hover::before {
 
 .swiper-button-prev,
 .swiper-button-next {
-    width: 40px;
-    height: 40px;
-    padding: 7px;
+    width: 65px;
+    height: 16px;
+    padding: 0;
     display: flex;
     background: transparent;
     align-items: center;
     justify-content: center;
     transition: all .5s var(--transition);
+    left: unset;
+    top: unset;
+    right: unset;
+    position: relative;
 }
 
-.swiper-button-prev:hover,
-.swiper-button-next:hover {
-    background: var(--theme-color-primary);
-}
 
 .swiper-button-prev svg path,
 .swiper-button-next svg path {
@@ -716,7 +716,7 @@ ul.main-menu li a:hover::before {
 
 .swiper-button-prev:hover svg path,
 .swiper-button-next:hover svg path {
-    fill: var(--white);
+    fill: var(--theme-color-secondary);
 }
 
 /* =========================================
@@ -1792,6 +1792,24 @@ section.partners h2 {
 ========================================= */
 .reviews-slider {
     overflow: visible;
+}
+
+.slider-navigation .swiper-button-prev,
+.slider-navigation .swiper-button-next {
+    position: relative;
+}
+
+.slider-navigation {
+    display: flex;
+    gap: 1em;
+    justify-content: flex-end;
+}
+
+.slider-navigation {
+    display: flex;
+    gap: 1em;
+    justify-content: flex-end;
+    margin-top: 3em;
 }
 
 .reviews-slider__slide a {
