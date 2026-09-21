@@ -777,6 +777,7 @@ ul.main-menu li a:hover::before {
 
 .hero__inner__content a.button {
     text-transform: uppercase;
+    height: 58px;
 }
 
 .hero::before {
