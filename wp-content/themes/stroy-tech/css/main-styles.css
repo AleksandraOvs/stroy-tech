@@ -1518,15 +1518,11 @@ section.projects {
 }
 
 .tasks-section__list>div:nth-child(2n) {
-    margin-top: -4em;
+    transform: translatey(-4em);
 }
 
 .tasks-section__item {
     height: max-content;
-}
-
-.tasks-section__list>div:nth-child(2n) {
-    margin-top: -4em;
 }
 
 .accent-text {
