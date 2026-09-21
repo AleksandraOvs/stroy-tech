@@ -4,7 +4,8 @@
         <?php //site_breadcrumbs() 
         ?>
 
-        <?php get_template_part('template-parts/titles') ?>
+        <?php //get_template_part('template-parts/titles') 
+        ?>
     </div>
 </div>
 <!-- End Page Header Wrapper -->
