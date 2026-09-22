@@ -1530,7 +1530,7 @@ section.projects {
 }
 
 .tasks-section__list>div:nth-child(2n) {
-    transform: translatey(-4em);
+    margin-top: -4em;
 }
 
 .tasks-section__item {
