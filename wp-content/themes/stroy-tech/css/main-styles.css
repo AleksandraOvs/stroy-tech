@@ -2737,7 +2737,7 @@ footer.footer * .menu {
     }
 
     .tasks-section__list>div:nth-child(2n) {
-        transform: none;
+        margin: 0;
     }
 
     .tasks-section__list {
