@@ -74,10 +74,10 @@ document.addEventListener('DOMContentLoaded', () => {
         slidesPerView: 2,
         spaceBetween: 20,
 
-        // navigation: {
-        //     nextEl: '.partners-slider__next',
-        //     prevEl: '.partners-slider__prev',
-        // },
+        navigation: {
+            nextEl: '.slider__next',
+            prevEl: '.slider__prev',
+        },
 
         // pagination: {
         //     el: '.partners-slider__pagination',
@@ -111,8 +111,8 @@ document.addEventListener('DOMContentLoaded', () => {
             spaceBetween: 20,
 
             navigation: {
-                nextEl: '.reviews-slider__next',
-                prevEl: '.reviews-slider__prev',
+                nextEl: '.slider__next',
+                prevEl: '.slider__prev',
             },
 
             pagination: {

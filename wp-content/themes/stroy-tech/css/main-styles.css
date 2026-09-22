@@ -1529,9 +1529,9 @@ section.projects {
     width: 100%;
 }
 
-.tasks-section__list>div:nth-child(2n) {
+/* .tasks-section__list>div:nth-child(2n) {
     transform: translatey(-4em);
-}
+} */
 
 .tasks-section__item {
     height: max-content;
@@ -2831,6 +2831,10 @@ footer.footer * .menu {
         max-width: unset;
     }
 
+    .partners-section {
+        padding-top: 10vh;
+    }
+
     .infoBlock-section__title {
         max-width: unset;
     }
@@ -2936,10 +2940,6 @@ footer.footer * .menu {
     .partners-section__title {
         width: 100%;
         padding: 0 1em;
-    }
-
-    .partners-section {
-        padding-top: 10vh;
     }
 
     .advantages-section__list {
