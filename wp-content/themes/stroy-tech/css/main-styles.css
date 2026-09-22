@@ -1529,12 +1529,12 @@ section.projects {
     width: 100%;
 }
 
-/* .tasks-section__list>div:nth-child(2n) {
+.tasks-section__list>div:nth-child(2n) {
     transform: translatey(-4em);
-} */
+}
 
 .tasks-section__item {
-    height: max-content;
+    height: 100%;
 }
 
 .accent-text {
