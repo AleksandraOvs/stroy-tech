@@ -2328,6 +2328,10 @@ footer.footer * .menu {
         transition: all .5s var(--transition);
     }
 
+    ul.main-menu li>a::before {
+        content: none;
+    }
+
     .hero__inner {
         z-index: 5;
         width: 100%;
