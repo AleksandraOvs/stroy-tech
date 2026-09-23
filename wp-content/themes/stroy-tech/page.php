@@ -9,12 +9,23 @@
 </section> -->
 
 <section class="page-content">
-    <div class="fixed-container">
-        <h1 class="page-title" data-scroll-animation="fade-down">
-            <?= the_title() ?>
-        </h1>
-        <?php the_content(); ?>
+    <div class="page-title-block">
+        <div class="fixed-container">
+            <?php site_breadcrumbs();  ?>
+            <h1 class="page-title" data-scroll-animation="fade-down">
+                <?= the_title() ?>
+            </h1>
+
+        </div>
     </div>
+
+    <div class="page-content__inner">
+        <div class="fixed-container">
+            <?php the_content(); ?>
+        </div>
+
+    </div>
+
 
 </section>
 
