@@ -31,6 +31,7 @@ function stroy_tech_enqueue_styles()
     wp_enqueue_style('normalize-stylesheet', get_template_directory_uri() . '/css/normalize.css');
     wp_enqueue_style('stroy-tech-stylesheet', get_template_directory_uri() . '/css/main-styles.css');
     wp_enqueue_style('stroy-tech-animations', get_template_directory_uri() . '/css/animations.css');
+    wp_enqueue_style('templates-styles', get_template_directory_uri() . '/css/about.css');
 
     wp_enqueue_style('popups-styles', get_template_directory_uri() . '/css/popups.css');
 
