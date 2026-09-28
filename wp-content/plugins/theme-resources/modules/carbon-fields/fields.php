@@ -302,39 +302,8 @@ add_action('carbon_fields_register_fields', function () {
 
                 ]),
 
-        ])
-
-        // ------------------------
-        // Блок с формой о/с
-        // ------------------------
-
-        ->add_tab('Форма обратной связи #2', [
-            Field::make(
-                'text',
-                'crb_feedback_block2_title',
-                'Заголовок блока'
-            )
-                ->set_width(50),
-            Field::make(
-                'rich_text',
-                'crb_feedback_block2_description',
-                'Описание блока'
-            )
-                ->set_width(50),
-
-            Field::make(
-                'association',
-                'crb_feedback2_form',
-                'Форма обратной связи'
-            )
-                ->set_types([
-                    [
-                        'type'      => 'post',
-                        'post_type' => 'wpcf7_contact_form',
-                    ],
-                ])
-                ->set_max(1),
         ]);
+
 
 
 
@@ -407,28 +376,30 @@ add_action('carbon_fields_register_fields', function () {
             Field::make('text', 'crb_callback_button_text', 'Текст кнопки для формы')
                 ->set_width(50),
 
-            Field::make('select', 'crb_callback_button_shortcode', 'Форма для кнопки')
-                ->set_width(50)
-                ->set_options(function () {
 
-                    $forms = get_posts([
-                        'post_type'      => 'wpcf7_contact_form',
-                        'posts_per_page' => -1,
-                        'post_status'    => 'publish',
-                        'orderby'        => 'title',
-                        'order'          => 'ASC',
-                    ]);
 
-                    $options = [
-                        '' => '— Выберите форму —',
-                    ];
+            // Field::make('select', 'crb_callback_button_shortcode', 'Форма для кнопки')
+            //     ->set_width(50)
+            //     ->set_options(function () {
 
-                    foreach ($forms as $form) {
-                        $options[$form->ID] = $form->post_title;
-                    }
+            //         $forms = get_posts([
+            //             'post_type'      => 'wpcf7_contact_form',
+            //             'posts_per_page' => -1,
+            //             'post_status'    => 'publish',
+            //             'orderby'        => 'title',
+            //             'order'          => 'ASC',
+            //         ]);
 
-                    return $options;
-                }),
+            //         $options = [
+            //             '' => '— Выберите форму —',
+            //         ];
+
+            //         foreach ($forms as $form) {
+            //             $options[$form->ID] = $form->post_title;
+            //         }
+
+            //         return $options;
+            //     }),
 
 
             Field::make('rich_text', 'crb_address', 'Адрес')
@@ -456,5 +427,37 @@ add_action('carbon_fields_register_fields', function () {
                     Field::make('text', 'link', 'Ссылка')
                         ->set_width(45),
                 ]),
+        ])
+
+        // ------------------------
+        // Блок с формой о/с
+        // ------------------------
+
+        ->add_tab('Форма обратной связи #2', [
+            Field::make(
+                'text',
+                'crb_feedback_block2_title',
+                'Заголовок блока'
+            )
+                ->set_width(50),
+            Field::make(
+                'rich_text',
+                'crb_feedback_block2_description',
+                'Описание блока'
+            )
+                ->set_width(50),
+
+            Field::make(
+                'association',
+                'crb_feedback2_form',
+                'Форма обратной связи'
+            )
+                ->set_types([
+                    [
+                        'type'      => 'post',
+                        'post_type' => 'wpcf7_contact_form',
+                    ],
+                ])
+                ->set_max(1),
         ]);
 });

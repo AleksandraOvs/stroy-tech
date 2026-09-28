@@ -1,7 +1,7 @@
 <?php
-$feedback_title2       = carbon_get_the_post_meta('crb_feedback_block2_title');
-$feedback_description2 = carbon_get_the_post_meta('crb_feedback_block2_description');
-$feedback_form2        = carbon_get_the_post_meta('crb_feedback2_form');
+$feedback_title2       = carbon_get_theme_option('crb_feedback_block2_title');
+$feedback_description2 = carbon_get_theme_option('crb_feedback_block2_description');
+$feedback_form2        = carbon_get_theme_option('crb_feedback2_form');
 
 if ($feedback_title2 || $feedback_description2 || !empty($feedback_form2)) :
 ?>
