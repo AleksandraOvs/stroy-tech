@@ -36,6 +36,8 @@ get_header() ?>
 
     </div>
 
+    <?php get_template_part('sections/form-section2') ?>
+
 
 </section>
 
