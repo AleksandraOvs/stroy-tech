@@ -6,7 +6,7 @@ $feedback_form2        = carbon_get_theme_option('crb_feedback2_form');
 if ($feedback_title2 || $feedback_description2 || !empty($feedback_form2)) :
 ?>
 
-    <section class="form-section">
+    <section class="form-section <?= !is_front_page() ? 'pb-0' : ''; ?>">
         <div class="form-section__inner">
 
             <?php if ($feedback_title2 || $feedback_description2) : ?>
