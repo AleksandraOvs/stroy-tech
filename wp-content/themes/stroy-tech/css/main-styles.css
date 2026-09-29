@@ -390,6 +390,10 @@ svg {
     padding-top: 0;
 }
 
+.pb-0 {
+    padding-bottom: 0;
+}
+
 .pt-10,
 section.pt-10 {
     padding-top: 10vh;
