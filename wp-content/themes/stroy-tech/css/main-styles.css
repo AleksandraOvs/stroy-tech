@@ -1934,6 +1934,10 @@ p.item-index {
     z-index: 1;
 }
 
+.contacts-section__map iframe {
+    height: 100%;
+}
+
 .contacts-section .fixed-container {
     position: relative;
     z-index: 2;
