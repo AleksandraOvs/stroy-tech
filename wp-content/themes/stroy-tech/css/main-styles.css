@@ -1556,7 +1556,7 @@ section.projects {
 
 .accent-text {
     color: var(--white);
-    padding: 5px;
+    padding: 2px 5px;
     background: var(--theme-color-primary);
 }
 
