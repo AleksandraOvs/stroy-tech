@@ -378,28 +378,28 @@ add_action('carbon_fields_register_fields', function () {
 
 
 
-            // Field::make('select', 'crb_callback_button_shortcode', 'Форма для кнопки')
-            //     ->set_width(50)
-            //     ->set_options(function () {
+            Field::make('select', 'crb_callback_button_shortcode', 'Форма для кнопки')
+                ->set_width(50)
+                ->set_options(function () {
 
-            //         $forms = get_posts([
-            //             'post_type'      => 'wpcf7_contact_form',
-            //             'posts_per_page' => -1,
-            //             'post_status'    => 'publish',
-            //             'orderby'        => 'title',
-            //             'order'          => 'ASC',
-            //         ]);
+                    $forms = get_posts([
+                        'post_type'      => 'wpcf7_contact_form',
+                        'posts_per_page' => -1,
+                        'post_status'    => 'publish',
+                        'orderby'        => 'title',
+                        'order'          => 'ASC',
+                    ]);
 
-            //         $options = [
-            //             '' => '— Выберите форму —',
-            //         ];
+                    $options = [
+                        '' => '— Выберите форму —',
+                    ];
 
-            //         foreach ($forms as $form) {
-            //             $options[$form->ID] = $form->post_title;
-            //         }
+                    foreach ($forms as $form) {
+                        $options[$form->ID] = $form->post_title;
+                    }
 
-            //         return $options;
-            //     }),
+                    return $options;
+                }),
 
 
             Field::make('rich_text', 'crb_address', 'Адрес')
