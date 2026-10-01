@@ -376,8 +376,6 @@ add_action('carbon_fields_register_fields', function () {
             Field::make('text', 'crb_callback_button_text', 'Текст кнопки для формы')
                 ->set_width(50),
 
-
-
             Field::make('select', 'crb_callback_button_shortcode', 'Форма для кнопки')
                 ->set_width(50)
                 ->set_options(function () {

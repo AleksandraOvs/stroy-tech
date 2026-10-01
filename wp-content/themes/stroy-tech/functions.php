@@ -204,8 +204,6 @@ require get_template_directory() . '/inc/walker.php';
 require get_template_directory() . '/inc/customizer.php';
 require get_stylesheet_directory() . '/inc/breadcrumbs.php';
 require get_stylesheet_directory() . '/inc/views.php';
-
-require get_stylesheet_directory() . '/inc/catalog-menu.php';
 require get_stylesheet_directory() . '/inc/cpt.php';
 
 
