@@ -98,20 +98,40 @@
                     ?>
 
                     <div class="header__contacts__links">
-                        <?php if ($phone): ?>
+                        <?php if (!empty($phone)) : ?>
+
+                            <?php
+                            $phone_href = !empty($phone_link)
+                                ? $phone_link
+                                : 'tel:' . preg_replace('/[^\d+]/', '', $phone);
+                            ?>
+
                             <a
-                                href="<?php echo esc_url($phone_link ?: 'tel:' . preg_replace('/[^0-9+]/', '', $phone)); ?>"
+                                href="<?php echo esc_attr($phone_href); ?>"
                                 class="header__phone">
                                 <?php echo esc_html($phone); ?>
                             </a>
-                        <?php endif; ?>
 
-                        <?php if ($email): ?>
+                        <?php
+                            print_r($phone_link);
+                        endif; ?>
+
+                        <?php if (!empty($email)) : ?>
+
+                            <?php
+                            $email_href = !empty($email_link)
+                                ? $email_link
+                                : 'mailto:' . sanitize_email($email);
+
+                            print_r($email_link);
+                            ?>
+
                             <a
-                                href="<?php echo esc_url($email_link ?: 'mailto:' . $email); ?>"
+                                href="<?php echo esc_attr($email_href); ?>"
                                 class="header__email">
                                 <?php echo esc_html($email); ?>
                             </a>
+
                         <?php endif; ?>
                     </div>
 
