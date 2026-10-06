@@ -40,14 +40,19 @@ get_header() ?>
         gap: 1em;
     }
 
-    /* .page-content__inner a.button {
-        background: var(--theme-color-black);
-        color: #fff;
-    } */
+    .error-page__content {
+        margin-top: 10vh;
+    }
 
     @media (max-width: 480px) {
-        .error-page__content strong {
+        .page-content__inner strong {
             font-size: 18px;
+            text-align: center;
+        }
+
+        .error-page__content svg {
+            width: 60%;
+            margin: 0 auto;
         }
     }
 </style>
