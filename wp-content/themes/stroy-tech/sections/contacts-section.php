@@ -14,7 +14,7 @@ $map                = carbon_get_theme_option('crb_map');
 $messengers         = carbon_get_theme_option('messengers');
 ?>
 
-<section class="contacts-section">
+<section class="contacts-section" id="contacts">
     <?php if ($map) : ?>
         <div class="contacts-section__map">
             <?php echo $map; ?>
