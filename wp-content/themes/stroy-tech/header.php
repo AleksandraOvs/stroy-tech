@@ -32,9 +32,9 @@
                 }
             }
             k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
-        })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js?id=113474968', 'ym');
+        })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js?id=113519109', 'ym');
 
-        ym(113474968, 'init', {
+        ym(113519109, 'init', {
             ssr: true,
             webvisor: true,
             clickmap: true,
@@ -46,7 +46,7 @@
         });
     </script>
     <noscript>
-        <div><img src="https://mc.yandex.ru/watch/113474968" style="position:absolute; left:-9999px;" alt="" /></div>
+        <div><img src="https://mc.yandex.ru/watch/113519109" style="position:absolute; left:-9999px;" alt="" /></div>
     </noscript>
     <!-- /Yandex.Metrika counter -->
 
